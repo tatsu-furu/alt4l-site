@@ -1,0 +1,11 @@
+# Generated files by Hugo
+/public/
+/resources/
+
+# Hugo build lock file and stats
+.hugo_build.lock
+hugo_stats.json
+
+# OS generated files
+.DS_Store
+Thumbs.db

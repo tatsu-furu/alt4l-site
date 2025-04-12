@@ -1,27 +1,24 @@
-# Navigation Links
-#   To link a homepage widget, specify the URL as a hash `#` followed by the filename of the
-  #     desired widget in your `content/home/` folder.
-  #   The weight parameter defines the order that the links will appear in.
-
+# --- config/_default/menus.yaml の全内容を以下に置き換え ---
 main:
   - name: Bio
     url: /
     weight: 10
-  - name: Papers
-    url: /#papers
+  - name: Papers (準備中)
+    url: '#'
     weight: 11
-  - name: Talks
-    url: /#talks
+  - name: Talks (準備中)
+    url: '#'
     weight: 12
-  - name: News
-    url: /#news
+  - name: News (準備中)
+    url: '#'
     weight: 13
-  - name: Experience
-    url: experience/
+  - name: Experience (準備中)
+    url: '#'
     weight: 20
-  - name: Projects
-    url: projects/
+  - name: Projects (準備中)
+    url: '#'
     weight: 30
-  - name: Teaching
-    url: teaching/
+  - name: Teaching (準備中)
+    url: '#'
     weight: 40
+# --- ここまで ---
