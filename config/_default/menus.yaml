@@ -1,6 +1,6 @@
 # --- config/_default/menus.yaml の修正案 ---
 main:
-  - name: Bio
+  - name: Home
     url: / # ホーム（または #about）
     weight: 10
   - name: Papers (準備中)
