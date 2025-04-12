@@ -12,12 +12,6 @@ main:
   - name: News (準備中)
     url: /post/ # ← # から実際のパスに変更 (ブログ記事用)
     weight: 13
-  - name: Experience (準備中)
-    url: /experience/ # ← # から実際のパスに変更
-    weight: 20
   - name: Projects (準備中)
     url: /project/ # ← # から実際のパスに変更
     weight: 30
-  - name: Teaching (準備中)
-    url: /teaching/ # ← # から実際のパスに変更
-    weight: 40
