@@ -139,4 +139,4 @@ awards:
 
 メインテーマとしてセルオートマトンモデルのLeniaを扱っています．
 
-（HP作成中につき未設定項目等あります）
+This page is under construction.
