@@ -14,7 +14,8 @@ marketing:
     site_type: Person
     local_business_type: ''
     org_name: ''
-    description: 'The highly-customizable Hugo Academic theme powered by Hugo Blox Builder. Easily create your personal academic website.'
+    description: '古川樹の個人ウェブサイト。人工生命とセルオートマトンに関する研究。'
+    image: 'media/sharing.png'  # ← 行頭のスペースを description などと合わせる
     twitter: 'GetResearchDev'
   analytics:
     google_analytics: ''
