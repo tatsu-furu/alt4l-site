@@ -1,23 +1,3 @@
----
-title: Teaching
-summary: My courses
-type: landing
+## 準備中 (Under Construction)
 
-cascade:
-  - _target:
-      kind: page
-    params:
-      show_breadcrumb: true
-
-sections:
-  - block: collection
-    id: teaching
-    content:
-      title: Teaching
-      filters:
-        folders:
-          - teaching
-    design:
-      view: article-grid
-      columns: 2
----
+このセクションは現在準備中です。コンテンツが追加されるまでお待ちください。

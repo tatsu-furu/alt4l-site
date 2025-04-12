@@ -1,3 +1,3 @@
-## €”õ’† (Under Construction)
+## æº–å‚™ä¸­ (Under Construction)
 
-‚±‚ÌƒZƒNƒVƒ‡ƒ“‚ÍŒ»Ý€”õ’†‚Å‚·BƒRƒ“ƒeƒ“ƒc‚ª’Ç‰Á‚³‚ê‚é‚Ü‚Å‚¨‘Ò‚¿‚­‚¾‚³‚¢B
+ã“ã®ã‚»ã‚¯ã‚·ãƒ§ãƒ³ã¯ç¾åœ¨æº–å‚™ä¸­ã§ã™ã€‚ã‚³ãƒ³ãƒ†ãƒ³ãƒ„ãŒè¿½åŠ ã•ã‚Œã‚‹ã¾ã§ãŠå¾…ã¡ãã ã•ã„ã€‚
