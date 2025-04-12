@@ -1,13 +1,3 @@
----
-title: Recent & Upcoming Talks
-cms_exclude: true
-#url: talk
+## 準備中 (Under Construction)
 
-# View
-view: card
-
-# Optional cover image (relative to `assets/media/` folder).
-image:
-  caption: ''
-  filename: ''
----
+このセクションは現在準備中です。コンテンツが追加されるまでお待ちください。

@@ -1,24 +1,23 @@
-# --- config/_default/menus.yaml の全内容を以下に置き換え ---
+# --- config/_default/menus.yaml の修正案 ---
 main:
   - name: Bio
-    url: /
+    url: / # ホーム（または #about）
     weight: 10
   - name: Papers (準備中)
-    url: '#'
+    url: /publication/ # ← # から実際のパスに変更
     weight: 11
   - name: Talks (準備中)
-    url: '#'
+    url: /event/ # ← # から実際のパスに変更
     weight: 12
   - name: News (準備中)
-    url: '#'
+    url: /post/ # ← # から実際のパスに変更 (ブログ記事用)
     weight: 13
   - name: Experience (準備中)
-    url: '#'
+    url: /experience/ # ← # から実際のパスに変更
     weight: 20
   - name: Projects (準備中)
-    url: '#'
+    url: /project/ # ← # から実際のパスに変更
     weight: 30
   - name: Teaching (準備中)
-    url: '#'
+    url: /teaching/ # ← # から実際のパスに変更
     weight: 40
-# --- ここまで ---
