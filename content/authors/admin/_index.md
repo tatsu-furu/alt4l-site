@@ -59,7 +59,7 @@ interests:
 
 education:
   - area: 修士（情報学）
-    institution: 名古屋大学大学院 情報学研究科
+    institution: 名古屋大学 大学院情報学研究科
     date_start: 2023-04-01
     date_end: 2025-03-31 # (予定)
     summary: | # 【注意】このsummaryが原因で表示されなくなる可能性あり
