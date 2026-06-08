@@ -4,7 +4,6 @@ authors:
   - admin
   - 有田隆也
   - 鈴木麗璽
-date: '2025-10-01T00:00:00Z'
 doi: ''
 publication_types:
   - paper-conference
