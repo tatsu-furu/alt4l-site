@@ -1,0 +1,9 @@
+/* Hide date display on publication pages and lists */
+.page-id-publication time,
+.pub-list-item time,
+section#publications time,
+li.js-cite-modal time,
+.article-metadata time,
+.pub-list-item .article-metadata {
+  display: none;
+}
