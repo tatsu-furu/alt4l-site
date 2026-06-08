@@ -60,6 +60,16 @@ sections:
         * 保有資格: 中学校・高等学校教諭一種免許状（理科）
     design:
       columns: '1'
-# --- 以下に、今後表示したい他のセクションを必要に応じて追加 ---
+# --- Section 4: Recent Publications ---
+  - block: collection
+    id: publications
+    content:
+      title: '📄 Publications'
+      filters:
+        folders:
+          - publication
+    design:
+      view: citation
+      columns: '1'
 
 ---

@@ -20,7 +20,7 @@ superuser: true
 highlight_name: true
 
 # Role/position/tagline
-role: 博士課程学生 (D1)
+role: 博士課程学生 (D2)
 
 # Organizations/Affiliations to display in Biography blox
 organizations:

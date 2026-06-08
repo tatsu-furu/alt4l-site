@@ -3,7 +3,7 @@ main:
   - name: Home
     url: / # ホーム（または #about）
     weight: 10
-  - name: Papers (準備中)
+  - name: Papers
     url: /publication/ # ← # から実際のパスに変更
     weight: 11
   - name: Talks (準備中)
