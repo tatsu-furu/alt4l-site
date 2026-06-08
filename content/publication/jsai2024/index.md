@@ -4,6 +4,7 @@ authors:
   - admin
   - 鈴木麗璽
   - 有田隆也
+date: '2024-05-01T00:00:00Z'
 doi: '10.11517/pjsai.JSAI2024.0_2F5GS504'
 url_pdf: 'https://www.jstage.jst.go.jp/article/pjsai/JSAI2024/0/JSAI2024_2F5GS504/_article/-char/ja'
 publication_types:
