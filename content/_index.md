@@ -64,7 +64,7 @@ sections:
   - block: collection
     id: publications
     content:
-      title: '📄 Publications'
+      title: '📄 Papers'
       filters:
         folders:
           - publication
