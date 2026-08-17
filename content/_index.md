@@ -72,4 +72,16 @@ sections:
       view: citation
       columns: '1'
 
+# --- Section 5: Projects ---
+  - block: collection
+    id: projects
+    content:
+      title: '🛠 Projects'
+      filters:
+        folders:
+          - project
+    design:
+      view: card
+      columns: '1'
+
 ---

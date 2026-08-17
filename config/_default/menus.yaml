@@ -12,6 +12,6 @@ main:
   - name: News (準備中)
     url: /post/ # ← # から実際のパスに変更 (ブログ記事用)
     weight: 13
-  - name: Projects (準備中)
+  - name: Projects
     url: /project/ # ← # から実際のパスに変更
     weight: 30
