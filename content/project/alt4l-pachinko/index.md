@@ -1,6 +1,6 @@
 ---
 title: 'ぱちすろのOTOMO'
-summary: 'パチスロ台の稼働状況を管理するPWA (Progressive Web App)'
+summary: 'パチスロの回転数・期待値計算ツール'
 tags:
   - Web
   - PWA

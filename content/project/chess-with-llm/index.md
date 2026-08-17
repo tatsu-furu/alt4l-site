@@ -1,6 +1,6 @@
 ---
 title: 'Chess with LLM'
-summary: 'LLM（大規模言語モデル）と対戦できるチェスアプリ'
+summary: 'オープニング練習・ヒント付き対局・LLMによる自然言語アドバイス・友人対戦に対応したチェスツール'
 tags:
   - Web
   - JavaScript
