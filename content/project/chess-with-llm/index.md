@@ -7,7 +7,7 @@ tags:
   - LLM
   - AI
 date: '2026-08-01T00:00:00Z'
-external_link: ''
+external_link: 'https://chess.alt4l.dev/'
 links:
   - icon: brands/github
     name: GitHub

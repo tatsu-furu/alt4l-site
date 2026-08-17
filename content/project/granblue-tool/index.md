@@ -6,7 +6,7 @@ tags:
   - JavaScript
   - Game
 date: '2025-11-01T00:00:00Z'
-external_link: ''
+external_link: 'https://granbluefantasy.tools.alt4l.dev/'
 links:
   - icon: brands/github
     name: GitHub
