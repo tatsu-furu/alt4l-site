@@ -24,8 +24,8 @@ role: 博士課程学生 (D2)
 
 # Organizations/Affiliations to display in Biography blox
 organizations:
-  - name: 名古屋大学 大学院情報学研究科 複雑系科学専攻 # 必要に応じて短縮・修正
-    url: https://www.nagoya-u.ac.jp/ # 名古屋大学のURL
+  - name: 名古屋大学 大学院情報学研究科 複雑系科学専攻
+    url: https://www.i.nagoya-u.ac.jp/gs/cpss/
 
 # Social network links
 profiles:
