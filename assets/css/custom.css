@@ -1,4 +1,560 @@
-/* Hide date display on publication pages and lists */
+/* ============================================================
+   FONTS
+   ============================================================ */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Noto+Sans+JP:wght@300;400;500;700&family=JetBrains+Mono:wght@400;500&display=swap');
+
+/* ============================================================
+   DESIGN TOKENS
+   ============================================================ */
+:root {
+  --bg:        #0c1a26;
+  --bg-1:      #0f2030;
+  --bg-2:      #132739;
+  --border:    #1d3448;
+  --border-hi: #2a4a62;
+
+  --accent:    #5ac8e0;
+  --accent-lo: #3ba8c0;
+  --accent-hi: #8dddf0;
+  --accent-bg: rgba(90, 200, 224, 0.08);
+
+  --text:      #d8e6f0;
+  --text-2:    #8aafc5;
+  --text-3:    #526d82;
+
+  --radius:    6px;
+  --radius-lg: 10px;
+
+  font-family: 'Inter', 'Noto Sans JP', sans-serif;
+}
+
+/* ============================================================
+   BASE
+   ============================================================ */
+html, body {
+  background-color: var(--bg) !important;
+  color: var(--text) !important;
+}
+
+body {
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+/* ============================================================
+   TYPOGRAPHY
+   ============================================================ */
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Inter', 'Noto Sans JP', sans-serif !important;
+  letter-spacing: -0.02em;
+  color: var(--text) !important;
+}
+
+p, li, td, th, label, span {
+  font-family: 'Inter', 'Noto Sans JP', sans-serif !important;
+}
+
+/* Section headings */
+.section-heading h1,
+.section-heading h2,
+.blox-section-title,
+[class*='text-3xl'],
+[class*='text-4xl'] {
+  font-weight: 600 !important;
+  letter-spacing: -0.03em !important;
+}
+
+/* ============================================================
+   NAVBAR
+   ============================================================ */
+#navbar-main,
+nav[id="navbar-main"],
+.navbar,
+header nav {
+  background-color: rgba(12, 26, 38, 0.88) !important;
+  backdrop-filter: blur(12px) saturate(160%) !important;
+  -webkit-backdrop-filter: blur(12px) saturate(160%) !important;
+  border-bottom: 1px solid var(--border) !important;
+  box-shadow: 0 1px 0 rgba(90, 200, 224, 0.06) !important;
+}
+
+/* Navbar brand / logo text */
+.navbar-brand,
+.navbar a.navbar-brand {
+  color: var(--text) !important;
+  font-weight: 600 !important;
+  letter-spacing: -0.01em !important;
+  font-size: 1.05rem !important;
+}
+
+/* Nav links */
+.nav-item a,
+.navbar-nav .nav-link {
+  color: var(--text-2) !important;
+  font-size: 0.875rem !important;
+  font-weight: 500 !important;
+  transition: color 0.15s !important;
+}
+.nav-item a:hover,
+.navbar-nav .nav-link:hover {
+  color: var(--accent) !important;
+}
+
+/* Active nav */
+.nav-item.active a,
+.navbar-nav .nav-link.active {
+  color: var(--accent) !important;
+}
+
+/* Search icon */
+.search-toggle,
+[aria-label="Search"] {
+  color: var(--text-2) !important;
+}
+.search-toggle:hover {
+  color: var(--accent) !important;
+}
+
+/* ============================================================
+   HERO / BIOGRAPHY SECTION
+   ============================================================ */
+#about,
+.blox-biography,
+section#about {
+  background-color: var(--bg) !important;
+}
+
+#profile,
+.blox-biography-3 #profile {
+  background: transparent !important;
+}
+
+/* Name */
+#profile h1,
+.blox-biography-3 h1 {
+  font-size: clamp(1.6rem, 4vw, 2.4rem) !important;
+  font-weight: 700 !important;
+  color: var(--text) !important;
+  letter-spacing: -0.03em !important;
+}
+
+/* Role/tagline */
+#profile .role,
+.blox-biography-3 .role,
+#profile p.role {
+  color: var(--accent) !important;
+  font-weight: 500 !important;
+  font-size: 0.95rem !important;
+  letter-spacing: 0.02em !important;
+}
+
+/* Organization */
+#profile .org,
+.blox-biography-3 .org-name {
+  color: var(--text-2) !important;
+  font-size: 0.875rem !important;
+}
+
+/* Social icons */
+#profile .social-icons a,
+.network-icon a,
+ul.network-icon a {
+  color: var(--text-3) !important;
+  transition: color 0.15s, transform 0.12s !important;
+}
+#profile .social-icons a:hover,
+.network-icon a:hover {
+  color: var(--accent) !important;
+  transform: translateY(-2px) !important;
+}
+
+/* Avatar */
+#profile img.avatar,
+.blox-biography-3 img.avatar,
+img.avatar {
+  border: 2px solid var(--border-hi) !important;
+  box-shadow: 0 0 0 4px rgba(90, 200, 224, 0.08) !important;
+}
+
+/* ============================================================
+   SECTION BACKGROUNDS
+   ============================================================ */
+section,
+.bg-gray-100,
+.bg-gray-50,
+[class*='bg-gray'] {
+  background-color: var(--bg) !important;
+}
+
+section:nth-of-type(even) {
+  background-color: var(--bg-1) !important;
+}
+
+.wg-markdown,
+.wg-pages,
+.wg-blank,
+.blox-markdown,
+.blox-pages {
+  background-color: transparent !important;
+}
+
+/* ============================================================
+   SECTION TITLES
+   ============================================================ */
+.section-heading {
+  margin-bottom: 2rem !important;
+}
+.section-heading h1,
+.section-heading h2 {
+  font-size: 1.5rem !important;
+  font-weight: 600 !important;
+  color: var(--text) !important;
+  position: relative !important;
+  display: inline-block !important;
+  padding-bottom: 0.5rem !important;
+}
+.section-heading h1::after,
+.section-heading h2::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 2rem;
+  height: 2px;
+  background: var(--accent);
+  border-radius: 2px;
+}
+.section-heading p {
+  color: var(--text-2) !important;
+  font-size: 0.9rem !important;
+  margin-top: 0.5rem !important;
+}
+
+/* ============================================================
+   CARDS
+   ============================================================ */
+.card,
+.card-simple,
+article.card,
+.pub-list-item,
+li.pub-list-item {
+  background-color: var(--bg-1) !important;
+  border: 1px solid var(--border) !important;
+  border-radius: var(--radius-lg) !important;
+  box-shadow: none !important;
+  transition: border-color 0.2s, transform 0.15s !important;
+}
+.card:hover,
+.card-simple:hover,
+article.card:hover {
+  border-color: var(--border-hi) !important;
+  transform: translateY(-2px) !important;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.25) !important;
+}
+
+.card-title,
+.card h3,
+.card h4 {
+  color: var(--text) !important;
+  font-weight: 600 !important;
+}
+.card p,
+.card-text {
+  color: var(--text-2) !important;
+  font-size: 0.875rem !important;
+  line-height: 1.65 !important;
+}
+
+/* ============================================================
+   PROJECT CARDS
+   ============================================================ */
+.card.project-card,
+.blox-pages article {
+  background-color: var(--bg-1) !important;
+  border: 1px solid var(--border) !important;
+  border-radius: var(--radius-lg) !important;
+  overflow: hidden !important;
+}
+.card.project-card:hover,
+.blox-pages article:hover {
+  border-color: var(--accent-lo) !important;
+}
+
+/* ============================================================
+   PUBLICATIONS
+   ============================================================ */
+.pub-list-item {
+  padding: 1.1rem 1.25rem !important;
+  margin-bottom: 0.75rem !important;
+  background-color: var(--bg-1) !important;
+  border: 1px solid var(--border) !important;
+  border-radius: var(--radius-lg) !important;
+  transition: border-color 0.2s !important;
+}
+.pub-list-item:hover {
+  border-color: var(--border-hi) !important;
+}
+.pub-list-item .article-title a,
+.pub-list-item .article-title {
+  color: var(--text) !important;
+  font-weight: 600 !important;
+  font-size: 0.95rem !important;
+  text-decoration: none !important;
+  transition: color 0.15s !important;
+}
+.pub-list-item .article-title a:hover {
+  color: var(--accent) !important;
+}
+.pub-list-item .article-metadata,
+.article-metadata {
+  color: var(--text-3) !important;
+  font-size: 0.8rem !important;
+}
+
+/* ============================================================
+   LINKS & BUTTONS
+   ============================================================ */
+a {
+  color: var(--accent) !important;
+  text-decoration: none !important;
+  transition: color 0.15s !important;
+}
+a:hover {
+  color: var(--accent-hi) !important;
+}
+
+/* Badge chips */
+.badge,
+span.badge {
+  background-color: var(--accent-bg) !important;
+  color: var(--accent) !important;
+  border: 1px solid rgba(90, 200, 224, 0.2) !important;
+  font-size: 0.72rem !important;
+  font-weight: 500 !important;
+  border-radius: 100px !important;
+  padding: 2px 10px !important;
+}
+
+/* Primary buttons */
+.btn-primary,
+a.btn-primary,
+button.btn-primary {
+  background-color: var(--accent) !important;
+  border-color: var(--accent) !important;
+  color: #0c1a26 !important;
+  font-weight: 600 !important;
+  font-size: 0.85rem !important;
+  border-radius: var(--radius) !important;
+  padding: 0.45rem 1.1rem !important;
+  box-shadow: none !important;
+  transition: background-color 0.15s, transform 0.12s !important;
+}
+.btn-primary:hover,
+a.btn-primary:hover {
+  background-color: var(--accent-hi) !important;
+  border-color: var(--accent-hi) !important;
+  transform: translateY(-1px) !important;
+}
+
+/* Outline / secondary buttons */
+.btn-outline-primary,
+a.btn-outline-primary,
+.btn-light,
+a.btn-light {
+  background-color: transparent !important;
+  border: 1px solid var(--border-hi) !important;
+  color: var(--text-2) !important;
+  font-size: 0.85rem !important;
+  font-weight: 500 !important;
+  border-radius: var(--radius) !important;
+  padding: 0.45rem 1.1rem !important;
+  transition: border-color 0.15s, color 0.15s !important;
+}
+.btn-outline-primary:hover,
+a.btn-outline-primary:hover,
+.btn-light:hover,
+a.btn-light:hover {
+  border-color: var(--accent) !important;
+  color: var(--accent) !important;
+  background-color: var(--accent-bg) !important;
+}
+
+/* ============================================================
+   TAGS
+   ============================================================ */
+.tag,
+a.tag,
+span.tag {
+  background-color: var(--bg-2) !important;
+  color: var(--text-2) !important;
+  border: 1px solid var(--border) !important;
+  border-radius: 4px !important;
+  font-size: 0.75rem !important;
+  padding: 2px 8px !important;
+  transition: border-color 0.15s, color 0.15s !important;
+}
+.tag:hover,
+a.tag:hover {
+  border-color: var(--accent) !important;
+  color: var(--accent) !important;
+}
+
+/* ============================================================
+   ARTICLE PAGES
+   ============================================================ */
+.article-container,
+.article-style {
+  background-color: var(--bg) !important;
+  color: var(--text) !important;
+}
+
+.article-style p,
+.article-style li {
+  color: var(--text) !important;
+  line-height: 1.8 !important;
+  font-size: 0.95rem !important;
+}
+
+.article-style h2,
+.article-style h3 {
+  color: var(--text) !important;
+  border-bottom: 1px solid var(--border) !important;
+  padding-bottom: 0.4rem !important;
+  margin-top: 2.5rem !important;
+}
+
+.article-style code,
+code {
+  font-family: 'JetBrains Mono', 'Consolas', monospace !important;
+  background-color: var(--bg-2) !important;
+  color: var(--accent) !important;
+  padding: 1px 5px !important;
+  border-radius: 3px !important;
+  font-size: 0.875em !important;
+}
+
+.article-style pre,
+pre {
+  background-color: var(--bg-2) !important;
+  border: 1px solid var(--border) !important;
+  border-radius: var(--radius) !important;
+}
+
+/* ============================================================
+   MARKDOWN BLOCKS
+   ============================================================ */
+.markdown-body,
+.blox-markdown .prose {
+  color: var(--text) !important;
+}
+
+.markdown-body h1,
+.markdown-body h2,
+.markdown-body h3,
+.blox-markdown h1,
+.blox-markdown h2,
+.blox-markdown h3 {
+  color: var(--text) !important;
+}
+
+.markdown-body p,
+.blox-markdown p {
+  color: var(--text-2) !important;
+  line-height: 1.8 !important;
+}
+
+.markdown-body ul li,
+.blox-markdown ul li {
+  color: var(--text-2) !important;
+}
+
+/* ============================================================
+   FOOTER
+   ============================================================ */
+footer,
+.page-footer {
+  background-color: var(--bg-1) !important;
+  border-top: 1px solid var(--border) !important;
+  color: var(--text-3) !important;
+}
+
+footer a,
+.page-footer a {
+  color: var(--text-2) !important;
+}
+footer a:hover,
+.page-footer a:hover {
+  color: var(--accent) !important;
+}
+
+footer p,
+.page-footer p {
+  font-size: 0.8rem !important;
+  color: var(--text-3) !important;
+}
+
+/* ============================================================
+   SCROLLBAR (Webkit)
+   ============================================================ */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: var(--bg);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--border-hi);
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--accent-lo);
+}
+
+/* ============================================================
+   SELECTION
+   ============================================================ */
+::selection {
+  background: rgba(90, 200, 224, 0.22);
+  color: var(--text);
+}
+
+/* ============================================================
+   EXPERIENCE TIMELINE
+   ============================================================ */
+.exp-title,
+.experience .card-title {
+  color: var(--text) !important;
+  font-weight: 600 !important;
+}
+.exp-org,
+.experience .card-subtitle {
+  color: var(--accent) !important;
+  font-size: 0.875rem !important;
+}
+.exp-meta,
+.experience .article-metadata {
+  color: var(--text-3) !important;
+  font-size: 0.8rem !important;
+}
+
+/* Timeline line */
+.experience .row::before,
+.exp-fill {
+  background-color: var(--border) !important;
+}
+
+/* Timeline dot */
+.exp-dot,
+.experience .dot {
+  background-color: var(--accent) !important;
+  border: 2px solid var(--bg) !important;
+  box-shadow: 0 0 0 3px rgba(90, 200, 224, 0.2) !important;
+}
+
+/* ============================================================
+   HIDE DATES ON PUBLICATIONS (preserved from original)
+   ============================================================ */
 .page-id-publication time,
 .pub-list-item time,
 section#publications time,
@@ -6,4 +562,41 @@ li.js-cite-modal time,
 .article-metadata time,
 .pub-list-item .article-metadata {
   display: none;
+}
+
+/* ============================================================
+   SEARCH
+   ============================================================ */
+#search-box input,
+.search-results {
+  background-color: var(--bg-1) !important;
+  border: 1px solid var(--border-hi) !important;
+  color: var(--text) !important;
+  border-radius: var(--radius) !important;
+}
+
+/* ============================================================
+   MISC
+   ============================================================ */
+hr {
+  border-color: var(--border) !important;
+}
+
+.cta-btn {
+  background: var(--accent-bg) !important;
+  color: var(--accent) !important;
+  border: 1px solid rgba(90, 200, 224, 0.25) !important;
+}
+
+:focus-visible {
+  outline: 2px solid var(--accent) !important;
+  outline-offset: 3px !important;
+}
+
+/* ============================================================
+   RESPONSIVE
+   ============================================================ */
+@media (max-width: 768px) {
+  h1 { font-size: 1.7rem !important; }
+  h2 { font-size: 1.3rem !important; }
 }
