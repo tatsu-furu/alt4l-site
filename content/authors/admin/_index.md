@@ -44,9 +44,6 @@ profiles:
 #    url: '' # URLを入力 or このブロック削除
 #  - icon: brands/linkedin # LinkedInのアイコン
 #    url: '' # URLを入力 or このブロック削除
-  - icon: brands/x # X (Twitter)のアイコン
-    url: '' # URLを入力 or このブロック削除
-
 
 #- icon: academicons/google-scholar # Google Scholarのアイコン
 #  url: '' # URLを入力 or このブロック削除
@@ -71,66 +68,12 @@ education:
     summary: | # 【注意】このsummaryが原因で表示されなくなる可能性あり
       機械ロボット学科 バイオエンジニアリングコース
 
-# --- 以下、プレースホルダー - ご自身の情報に書き換えるか、不要ならセクションごと削除 ---
-work:
-  - position: Director of Cloud Infrastructure # 例: アルバイト経験などあれば
-    company_name: GenCoin
-    company_url: ''
-    company_logo: ''
-    date_start: 2021-01-01
-    date_end: ''
-    summary: |2-
-      Responsibilities include:
-      - lorem ipsum dolor sit amet, consectetur adipiscing elit
-      - lorem ipsum dolor sit amet, consectetur adipiscing elit
-      - lorem ipsum dolor sit amet, consectetur adipiscing elit
-
-skills:
-  - name: Technical Skills
-    items:
-      - name: Python
-        description: ''
-        percent: 80
-        icon: code-bracket
-      - name: Data Science
-        description: ''
-        percent: 100
-        icon: chart-bar
-      - name: SQL
-        description: ''
-        percent: 40
-        icon: circle-stack
-  - name: Hobbies
-    color: '#eeac02'
-    color_border: '#f0bf23'
-    items:
-      - name: Hiking
-        description: ''
-        percent: 60
-        icon: person-simple-walk
-      - name: Cats
-        description: ''
-        percent: 100
-        icon: cat
-      - name: Photography
-        description: ''
-        percent: 80
-        icon: camera
-
 languages:
   - name: 日本語 # 母語
     percent: 100
   - name: English # 英語レベルなど
     percent: 75 # 自己評価
 
-awards:
-  - title: 賞の名称など # 例
-    url: https://www.example.org # 賞に関するURL (任意)
-    date: '2023-01-01' # 受賞日
-    awarder: 授与機関 # 例
-    icon: '' # アイコン (任意)
-    summary: | # 賞に関する簡単な説明 (任意)
-      詳細をここに記述します。
 ---
 
 ## About Me
